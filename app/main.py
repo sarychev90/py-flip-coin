@@ -18,9 +18,9 @@ def flip_coin() -> dict:
 
 def draw_gaussian_distribution_graph() -> None:
     result = flip_coin()
-    x = np.array(list(result.keys()))
-    y = np.array(list(result.values()))
-    plt.plot(x, y)
+    x_axis = np.array(list(result.keys()))
+    y_axis = np.array(list(result.values()))
+    plt.plot(x_axis, y_axis)
     plt.xlabel("Average Pulse")
     plt.ylabel("Calorie Burnage")
     plt.xlabel("Heads count")
@@ -29,5 +29,5 @@ def draw_gaussian_distribution_graph() -> None:
     plt.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     draw_gaussian_distribution_graph()
